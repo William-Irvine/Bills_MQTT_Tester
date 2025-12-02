@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Bills_MQTT_Tester.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            
+            <BoxView HeightRequest="2" Color="Black"/>
+
+            <!-- Broker Address -->
+            <Label Text="Broker Address"
+                   FontSize="16"
+                   TextColor="#555" />
+            <Entry x:Name="brokerAddressEntry"
+                   Placeholder="e.g., mqtt.example.com"
+                   BackgroundColor="White"
+                   TextColor="Black"
+                   PlaceholderColor="#999"
+                   HeightRequest="45"
+                   Keyboard="Url"
+                   Margin="0,0,0,10"                   
+                   />
+
+            <!-- Username -->
+            <Label Text="Username"
+                   FontSize="16"
+                   TextColor="#555" />
+            <Entry x:Name="usernameEntry"
+                   Placeholder="Enter username"
+                   BackgroundColor="White"
+                   TextColor="Black"
+                   PlaceholderColor="#999"
+                   HeightRequest="45"
+                   Margin="0,0,0,10"
+                   />
+
+            <!-- Password -->
+            <Label Text="Password"
+                   FontSize="16"
+                   TextColor="#555" />
+            <Entry x:Name="passwordEntry"
+                   Placeholder="Enter password"
+                   IsPassword="True"
+                   BackgroundColor="White"
+                   TextColor="Black"
+                   PlaceholderColor="#999"
+                   HeightRequest="45"
+                   Margin="0,0,0,20"
+                   />
+
+            <BoxView HeightRequest="2" Color="Black"/>
+
+            <!-- Brand -->
+            <Label Text="Brand"
+                   FontSize="16"
+                   TextColor="#555" />
+            <Entry x:Name="brandEntry"
+                   Placeholder="Enter brand"
+                   BackgroundColor="White"
+                   TextColor="Black"
+                   PlaceholderColor="#999"
+                   HeightRequest="45"
+                   Keyboard="Url"
+                   Margin="0,0,0,10"
+                   />
+
+            <!-- Model -->
+            <Label Text="Model"
+                   FontSize="16"
+                   TextColor="#555" />
+            <Entry x:Name="modelEntry"
+                   Placeholder="Enter model"
+                   BackgroundColor="White"
+                   TextColor="Black"
+                   PlaceholderColor="#999"
+                   HeightRequest="45"
+                   Margin="0,0,0,10"
+                   />
+
+            <!-- Year -->
+            <Label Text="Year"
+                   FontSize="16"
+                   TextColor="#555" />
+            <Entry x:Name="yearEntry"
+                   Placeholder="Enter year"
+                   BackgroundColor="White"
+                   TextColor="Black"
+                   PlaceholderColor="#999"
+                   HeightRequest="45"
+                   Margin="0,0,0,20"
+                   />
+
+            <!-- Save Button -->
+            <Button 
+                x:Name="ConnectBtn"
+                Text="Connect &amp; Send"
+                BackgroundColor="#1976D2"
+                TextColor="White"
+                FontAttributes="Bold"
+                CornerRadius="8"
+                HeightRequest="45"
+                Clicked="OnConnectClicked" />
+
+
+            <!-- <Button
+                x:Name="CounterBtn"
+                Text="Click me" 
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnCounterClicked"
+                BackgroundColor="#1976D2"
+                TextColor="White"
+                FontAttributes="Bold"
+                CornerRadius="8"
+                HeightRequest="45" /> -->
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

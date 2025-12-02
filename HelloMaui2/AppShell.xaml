@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Bills_MQTT_Tester.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Bills_MQTT_Tester"
+    Shell.FlyoutBehavior="Disabled"
+    Title="Bills_MQTTT_Tester">
+
+    <ShellContent
+        Title="Bills MQTT Tester"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" /> 
+
+</Shell>
