@@ -7,5 +7,5 @@ My use case:
 
 Raspberry Pi running mosquitto broker.
 
-Python script running to ingest data coming over on topic data/car as a JSON message and save to appropriate columns in a PostgreSQL Database also deployed on the Raspberry Pi.
+simple_mqtt_ingestor.py script runs to ingest data coming over mosquitto broker on topic data/car as a JSON message and save to appropriate columns in a PostgreSQL Database also deployed on the Raspberry Pi.
 
